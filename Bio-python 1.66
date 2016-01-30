@@ -1,0 +1,44 @@
+Installation of Bio-python1.66
+
+Environment
+  Mac OS X El capitan, 10.11.2
+  Homebrew installed
+  Xcode installed, and confirmed that it works well
+
+
+Install Python3
+  From Python official website; https://www.python.org/downloads/release/python-351/
+  download Mac OS X 64-bit/32-bit installer
+  Follow installer, get python3.5.1
+
+Install Numpy, scipy, matplotlib, ReportLab, 
+　These wesites were useful
+　  http://hiho-developer.hatenablog.com/entry/20131221/1387564021
+　  http://d.hatena.ne.jp/fronori/20140529/1401374354
+  brew update
+  brew install python3
+  pip3 install --upgrade setuptools
+  pip3 install --upgrade pip
+  brew linkapps
+  pip3 install numpy
+  brew install gcc    ## it took 1 hour
+  easy_install cython
+  brew install swig
+  pip3 install git+http://github.com/scipy/scipy/
+  brew install freetype
+  sudo pip3 install matplotlib
+  pip install reportlab
+
+  I checked if they are accurately installed by 
+    python3
+    >>> import numpy
+    >>> import scipy
+    >>> from reportlab.graphics import renderPDF
+
+Install biopython
+  easy_install -f http://biopython.org/DIST/ biopython
+  
+  I confirmed iinnstallation
+  python3
+    >>> from Bio.Seq import Seq
+
