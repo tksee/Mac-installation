@@ -1,0 +1,17 @@
+To let Rstudio markdown to output PDF file, I downloaded MacTex
+
+Download MacTeX.pkg(June2015) on firefox, and install it.
+ http://www.tug.org/mactex/mactex-download.html
+
+Following the "READ ME FIRST.pdf", opened TeXShop.
+There were some updatings or installations
+
+I opened TeX live utility, got error;
+ Repository URL has a newer TeXLive Version. Your TeX Live version is 0, but your default repository URL appears to be for TeX Live 2015. You need to manually upgrade 
+Following this website, I opened the preference, changed the TeX programs to usr/TeX/texbin
+ http://tex.stackexchange.com/questions/271597/manually-upgrading-texlive-version
+I got massage "infrastructure update succeeded"
+
+Closed TeXShop and Tex Live Utility and Rstudio. Then opened Rstudio and successfully knitted PDF file.
+
+
