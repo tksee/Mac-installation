@@ -1,0 +1,59 @@
+Download circus to Mac
+info; OS X Yosemite 10.10.5
+  iMac(27inch, Late2009)
+  2.66GHz, Intel Core i5
+  4GB 1067 MHz DDR3
+
+Perl upgrade
+  http://learn.perl.org/installing/osx.html
+  curl -L http://xrl.us/installperlosx | bash
+  Got perl v5.18.2
+
+Circos download
+  http://www.circos.ca/software/download/circos/
+  save circos-0.69.tgz in "~/software/circos/circos-0.69.tgz"
+  tar xvfz circos-x.xx.tgz
+  ln -s circos-x.xx current
+  chmod +x bin/circos
+  
+  export PATH=~/software/circos/current/bin:$PATH > ~/.bashrc
+  cd ~
+  echo $PATH
+    /Users/bgeorgi/software/circos/current/bin:/Users/bgeorgi/software/circos/current/bin:/Users/bgeorgi/software/circos/current/bin:/Users/bgeorgi/perl5/perlbrew/bin:/Users/bgeorgi/software/circos/current/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/texbin
+  which circos
+    /Users/bgeorgi/software/circos/current/bin/circos
+  # Successfully, install and made path
+  
+  pwd 
+    ~/software/circos/current
+  bin/circos -modules
+    get error; -bash: /bin/env: No such file or directory
+  which env
+    /usr/bin/env
+  using vi, change the first line of bin/circos as
+    #!/usr/bin/env perl
+  bin/circos -modules
+  
+Install perl modules
+  bin/circos -modules
+  #I am missing; Config::General, Font::TTF::Font, Math::Bezier, Math::VecStat, Readonly, SVG
+  #I am missing; Set::IntSpan, Statistics::Basic, Text::Format
+  sudo cpan Config::General #repeat for other packages
+  
+  #I am missing; GD
+  curl -O http://wangqinhu.com/data/gd/gd.tar.gz
+  tar -zxf gd.tar.gz
+  cd gd
+  sudo ./install
+
+  bin/circos -modules
+  # everything is ok
+  
+  cd example
+  ./run
+  # get the png file. Installation suceeded.
+  
+  
+  
+  
+  
