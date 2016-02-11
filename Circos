@@ -11,6 +11,7 @@ Perl upgrade
 
 Circos download
   http://www.circos.ca/software/download/circos/
+  http://www.geocities.jp/ancientfishtree/circos_ji.html
   save circos-0.69.tgz in "~/software/circos/circos-0.69.tgz"
   tar xvfz circos-x.xx.tgz
   ln -s circos-x.xx current
@@ -41,6 +42,7 @@ Install perl modules
   sudo cpan Config::General #repeat for other packages
   
   #I am missing; GD
+  taken from ( http://wangqinhu.com/install-gd-on-mavericks/ )
   curl -O http://wangqinhu.com/data/gd/gd.tar.gz
   tar -zxf gd.tar.gz
   cd gd
@@ -52,7 +54,13 @@ Install perl modules
   cd example
   ./run
   # get the png file. Installation suceeded.
+
+#Course
+ Session2 / preamble
+ Session2 / Displaying and Formatiing ideograms
+ Session3 / Data Tracks, Lesson4 - Links
   
+#tutorial 
   
   
   
