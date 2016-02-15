@@ -11,22 +11,25 @@ Perl upgrade
 
 Circos download
   http://www.circos.ca/software/download/circos/
+  http://www.circos.ca/documentation/tutorials/configuration/installation/
   http://www.geocities.jp/ancientfishtree/circos_ji.html
-  save circos-0.69.tgz in "~/software/circos/circos-0.69.tgz"
+  save circos-0.69.tgz in "~/softwares/circos/circos-0.69.tgz"
   tar xvfz circos-x.xx.tgz
   ln -s circos-x.xx current
   chmod +x bin/circos
   
-  export PATH=~/software/circos/current/bin:$PATH > ~/.bashrc
+  export PATH=~/softwares/circos/current/bin:$PATH > ~/.bashrc
   cd ~
   echo $PATH
-    /Users/bgeorgi/software/circos/current/bin:/Users/bgeorgi/software/circos/current/bin:/Users/bgeorgi/software/circos/current/bin:/Users/bgeorgi/perl5/perlbrew/bin:/Users/bgeorgi/software/circos/current/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/texbin
+    #we would get
+    #/Users/bgeorgi/softwares/circos/current/bin:/Users/bgeorgi/software/circos/current/bin:/Users/bgeorgi/software/circos/current/bin:/Users/bgeorgi/perl5/perlbrew/bin:/Users/bgeorgi/software/circos/current/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/texbin
   which circos
-    /Users/bgeorgi/software/circos/current/bin/circos
+    #we would get
+    #/Users/bgeorgi/softwares/circos/current/bin/circos
   # Successfully, install and made path
   
   pwd 
-    ~/software/circos/current
+    ~/softwares/circos/current
   bin/circos -modules
     get error; -bash: /bin/env: No such file or directory
   which env
